@@ -1,0 +1,1 @@
+Olá. Este projeto foi desenvolvido no curso de Web Developer da Digital House. Ele consiste em um backend de um blog em spring
