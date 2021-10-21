@@ -1,7 +1,7 @@
 package com.digitalhouse.blog.Controller;
 
 import com.digitalhouse.blog.Model.Postagem;
-import com.digitalhouse.blog.repository.PostagemRepository;
+import com.digitalhouse.blog.Repository.PostagemRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

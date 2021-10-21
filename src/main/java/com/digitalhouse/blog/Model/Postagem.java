@@ -1,5 +1,7 @@
 package com.digitalhouse.blog.Model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
@@ -27,6 +29,10 @@ public class Postagem {
         return id;
     }
 
+    @ManyToOne
+    @JsonIgnoreProperties("postagens")
+    private Tema tema;
+
     public void setId(Long id) {
         this.id = id;
     }
@@ -53,5 +59,13 @@ public class Postagem {
 
     public void setDate(Date data) {
         this.data = data;
+    }
+
+    public Tema getTema() {
+        return tema;
+    }
+
+    public void setTema(Tema tema) {
+        this.tema = tema;
     }
 }
